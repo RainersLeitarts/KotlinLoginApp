@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LoginPageKotlin</string>
+
+    <string name="login_hint">Lietotājvārds</string>
+    <string name="password_hint">Parole</string>
+    <string name="login_button">Ienākt</string>
+</resources>
