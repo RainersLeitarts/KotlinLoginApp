@@ -10,15 +10,18 @@ class Login {
     private val password: String = "Password123"
 
     //Pārbauda vai ievadītie dati sakrīt ar lietotāja datiem
-    fun verifyUser(context:Context, user:String, password:String){
-        if (user == this.user){
+    fun verifyUser(context:Context, user:String, password:String) : Boolean{
+        return if (user == this.user){
             if (password == this.password){
                 toastMaker(context, "Sveiki $user!")
+                true
             }else{
-                toastMaker(context, "Ievadi Paroli!")
+                toastMaker(context, "Ievadi pareizu Paroli!")
+                false
             }
         }else{
             toastMaker(context, "Ievadi pareizu Lietotājvārdu!")
+            false
         }
     }
 

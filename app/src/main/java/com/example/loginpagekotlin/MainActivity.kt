@@ -1,11 +1,10 @@
 package com.example.loginpagekotlin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -28,7 +27,11 @@ class MainActivity : AppCompatActivity() {
             val password = passwordInput.text.toString()
 
             //Izsauc verifyUser no Login klases
-            Login.verifyUser(this@MainActivity, user, password)
+            if (Login.verifyUser(this@MainActivity, user, password)){
+                val intent = Intent(this, TVNetActivity::class.java)
+                startActivity(intent)
+            }
         }
     }
+
 }

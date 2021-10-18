@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">LoginPageKotlin</string>
     <string name="login_hint">Lietotājvārds</string>
     <string name="password_hint">Parole</string>
     <string name="login_button">Ienākt</string>
-    <string name="iet_uz_tvnet">Iet uz tvnet.lv</string>
-    <string name="choose_language">Izvēlies valodu</string>
+    <string name="iet_uz_tvnet">Перейти на tvnet.lv</string>
+    <string name="choose_language">Выберите язык</string>
 </resources>

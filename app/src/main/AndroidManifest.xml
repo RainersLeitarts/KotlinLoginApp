@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginPageKotlin">
         <activity
+            android:name=".BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TVNetActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
